@@ -59,6 +59,9 @@ source .venv/bin/activate
 uv pip install --index-url http://localhost:8080/simple/ open-webui
 
 uv pip install 'langchain-core>=0.3.0,<0.3.30
+
+# diable torch utils
+uv pip uninstall torch
 ```
 
 ### Start server
