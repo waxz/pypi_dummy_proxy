@@ -58,7 +58,7 @@ source .venv/bin/activate
 # Install open-webui using the proxy (this will get dummy torch automatically)
 uv pip install --index-url http://localhost:8080/simple/ open-webui
 
-uv pip install 'langchain-core>=0.3.0,<0.3.30
+uv pip install --index-url http://localhost:8080/simple/ 'langchain-core>=0.3.0,<0.3.30' 
 
 # remove error detection for torch 
 uv pip uninstall torch
